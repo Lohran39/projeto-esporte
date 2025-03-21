@@ -1,0 +1,205 @@
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .jogador {
+        flex-direction: column; /* Empilha os itens em telas pequenas */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Ocupa toda a largura disponível */
+        max-width: 200px;
+        margin-bottom: 15px; /* Adiciona espaçamento entre os cartões */
+    }
+
+    .card img {
+        width: 100%; /* Ocupa todo o espaço disponível */
+        height: auto; /* Define altura fixa para padronizar */
+        object-fit: cover; /* Mantém proporção correta */
+    }
+
+    h1, p {
+        font-size: 18px;
+    }
+
+    .classe-times {
+        font-size: 18px; /* Reduz o tamanho da fonte para telas menores */
+        margin-bottom: 10px; /* Ajusta o espaçamento */
+    }
+    footer {
+        font-size: 14px; /* Diminui o texto do rodapé */
+        padding: 5px; /* Ajusta o espaçamento no rodapé */
+    }
+}
+
+body{
+    overflow-x: hidden; /* Impede rolagem lateral */
+    max-width: 100vw; /* Evita que elementos ultrapassem a tela */
+    background-image: linear-gradient(#0C0C0C , #2D2D2D 20%, #0C0C0C );
+    background-attachment: fixed;
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos */
+}
+
+h1 {
+    font-size: 50px;
+    background-color:rgb(205, 130, 0);
+    box-shadow: 10px 10px 10px #a07842;
+    text-align: center;
+}
+h2 {
+    font-size: 22px; /* Ajuste o tamanho da fonte para ser maior que a tag <p> */
+}
+main{
+    background-color: rgb(192, 192, 192);
+    box-shadow: 4px 4px 9px 0px #e78403;
+    border-radius: 20px 40px;
+    width: 90%; /* Ocupar quase toda a tela */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p {
+    background-color: rgb(205, 130, 0);
+    font-size: clamp(16px, 4vw, 45px); /* Ajusta tamanho dinamicamente */
+    box-shadow: 10px 10px 10px #a07842;
+    text-align: center;
+    padding: 10px;
+}
+.classe-musica{
+    color: rgb(222, 222, 222);
+    background-color: transparent; /* Adiciona essa linha para remover o fundo */
+}
+.verde {
+    color:black ;
+    margin-top: 100px; /* ajuste este valor conforme necessário */
+}
+.foto {
+    margin-top: 90px;  
+}
+
+.jogador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Ajuste o espaçamento desejado entre as fotos */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+}
+.card h2 {
+    font-size: 24px; /* Aumente este valor */
+}
+.card img, img {
+    width: 200px; /* Ajusta a imagem ao tamanho do card */
+    height: 300px; /* Define uma altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px; /* Deixa as imagens arredondadas */
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.classe-video{
+    background-color: transparent;
+}
+.classe-link{
+    background-color: transparent;
+    color:rgb(224, 224, 224);
+}
+.classe-times{
+    background-color: transparent;
+    color: #cb8118;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.classe-voltar{
+    background-color: transparent;
+    box-shadow:none;
+    position:relative
+}
+.classe-skip{
+    background-color: transparent;
+    box-shadow: none;
+    position:relative;
+    
+}
+body#segundo{
+    width: center;
+    background-image: linear-gradient(#201b22 , #39315d 20%, #cfbecf );
+    background-attachment: fixed;
+    min-height: 100vh; /* Adicione esta linha */
+    position: relative; /* Adicione esta linha */
+}
+
+.titulo{
+    background-color: rgb(189, 155, 189);
+    box-shadow: 10px 10px 10px #c6c2bc;
+    color:#302a2a
+}
+.frase{ 
+    background-color: transparent; /* Remove qualquer imagem ou degradê */
+    box-shadow: none;
+    font-family: sans-serif ;
+    font-weight: bold;
+    color:#171616;
+}
+footer.segundo{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    position: absolute; /* Adicione esta linha */
+    bottom: 0; /* Adicione esta linha */
+    width: 100%; /* Adicione esta linha */
+}
+
+.links-navegacao {
+    display: flex;
+    justify-content: space-between; /* Organiza os botões verticalmente */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    margin-bottom: 10px; /* Espaçamento antes do rodapé */
+    padding: 0 20px;  /* Adiciona espaçamento lateral no contêiner */
+    position: absolute; /* Adicione esta linha */
+    bottom: 50px; /* Adicione esta linha e ajuste o valor conforme necessário */
+    width: 100%; /* Adicione esta linha */
+}
+
+.links-navegacao a {
+    text-decoration: none;
+    background-color: rgb(189, 155, 189);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 1px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold; /* Texto destacado */
+
+}
+
+.links-navegacao a:hover {
+    background-color: rgb(189, 155, 189);
+}
+    
